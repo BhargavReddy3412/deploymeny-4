@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table,td{
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+    .table2{
+         height: 300px;
+         width: 250px;
+         position: relative;
+         top: 100px;
+         left: 180px;
+    }
+    .table3{
+         height: 300px;
+         width: 350px;
+         position: relative;
+         top: 100px;
+         left: 180px;
+    }
+    .table4{
+         height: 400px;
+         width: 400px;
+         position: relative;
+         top: 100px;
+         left: 180px;
+    }
+    h2{
+      color: red;
+      text-shadow: 2px 2px 2px yellow;
+      border: 2px solid;
+    }
+    @media screen and (min-width:320px) and (max-width:425px){
+      .table3,.table4{
+        display: none;
+      }
+      
+     }
+    @media screen and (min-width:426px) and (max-width:768px){
+      .table4,.table2{
+        display: none;
+      }
+      
+    }
+    @media screen and (min-width:769px){
+      .table2,.table3{
+        display: none;
+      }
+      
+    } 
+  </style>
+  <body>
+    <table class="table2">
+     <caption><h2>TABLE-2*2</h2></caption>
+      <tr>
+        <td style="background-color: green;"></td>
+        <td style="background-color: orange;"> </td>
+      </tr>
+      <tr>
+        <td style="background-color: blue;"></td>
+        <td style="background-color: violet ;"> </td>
+      </tr>
+    </table>
+    <table class="table3">
+      <caption><h2>TABLE-3*3</h2></caption>
+        <tr>
+          <td style="background-color: pink;"></td>
+          <td style="background-color: aqua;"></td>
+          <td style="background-color: yellow;"></td>
+        </tr>
+        <tr>
+          <td style="background-color: rebeccapurple;"></td>
+          <td style="background-color: gray;"></td>
+          <td style="background-color: skyblue;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: red;"></td>
+            <td style="background-color: brown;"></td>
+            <td style="background-color: burlywood;"></td>
+        </tr>
+      </table>
+      <table class="table4">
+        <caption><h2>TABLE-4*4</h2></caption>
+        <tr>
+          <td style="background-color: blue;"></td>
+          <td style="background-color: red;"></td>
+          <td style="background-color: orange;"></td>
+          <td style="background-color: orchid"></td>
+        </tr>
+        <tr>
+          <td style="background-color: aquamarine;"></td>
+          <td style="background-color: chocolate;"></td>
+          <td style="background-color: darkmagenta;"></td>
+          <td style="background-color: yellow"></td>
+        </tr>
+        <tr>
+          <td style="background-color: pink;"></td>
+          <td style="background-color: palegreen;"></td>
+          <td style="background-color: honeydew;"></td>
+          <td style="background-color: khaki;"></td>
+        </tr>
+        <tr>
+          <td style="background-color: pink;"></td>
+          <td style="background-color: rgb(128, 39, 63);"></td>
+          <td style="background-color: rgb(255, 0, 183);"></td>
+          <td style="background-color: black;"></td>
+        </tr>
+      </table>
+</body>
+</html>
